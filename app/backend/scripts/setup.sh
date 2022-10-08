@@ -10,5 +10,5 @@ source venv/bin/activate
 
 which python3
 
-# assumes requirements.txt executing folder
+# assumes requirements.txt in folder
 pip install
