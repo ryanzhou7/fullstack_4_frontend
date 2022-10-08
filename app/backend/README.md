@@ -19,5 +19,14 @@
 
 - `sh dev.sh`
 
+## Views
 
-## Full spec app
+- Flask is a full stack framework
+- Views are rendered via Jinja and called templates
+- **Templates**: files that contain static data as well as placeholders for dynamic data
+- {{ and }} is an expression that will be output to the final document. {% and %} denotes a control flow statement like if and for. Between the {} is mostly python
+  - [source](https://flask.palletsprojects.com/en/2.2.x/tutorial/templates/)
+- This is SSR (server-side rendering)
+  - python does not run in the browser
+  - Jinja/python does the dynamic replacements then plain .html is returned to
+  
