@@ -29,4 +29,7 @@
 - This is SSR (server-side rendering)
   - python does not run in the browser
   - Jinja/python does the dynamic replacements then plain .html is returned to
-  
+
+## Routes
+
+- Let's create the endpoints for our app
