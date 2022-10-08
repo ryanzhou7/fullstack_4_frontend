@@ -4,12 +4,10 @@ from flaskr.data import get_long_url, save_url
 from flask import render_template, request, redirect
 
 
-@app.route('/<string:short_url>')
-def redirect_to(short_url):
-    get_long_url(short_url)
-
+@app.route('/<string:url_id>')
+def redirect_to(url_id):
     # redirect returns a response which contains a redirect to <url>
-    return redirect(f"https://www.google.com/search?q={short_url}")
+    return redirect(f"https://{get_long_url(url_id)}")
 
 
 # Not adding any methods means it is automatically a GET

@@ -36,5 +36,5 @@
 - Stub out data functions
 
 
-## Database persistence v1
-- Easiest implementation...
+## Database persistence - json
+- Store data in json

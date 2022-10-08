@@ -2,7 +2,7 @@
 
 source ../venv/bin/activate
 
-cd ..
+cd ../flaskr
 
 # assumes starter file is named app.py / wsgi.py and in current directoy
 # otherwise $ flask --app <file_name.py> run
