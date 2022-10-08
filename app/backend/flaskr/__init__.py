@@ -1,4 +1,5 @@
 from flask import Flask
 
-# single, global app instance
+# app: single, global app instance
+# name: module name, i.e. flaskr
 app = Flask(__name__)
