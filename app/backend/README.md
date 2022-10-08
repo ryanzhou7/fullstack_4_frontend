@@ -33,3 +33,4 @@
 ## Routes
 
 - Let's create the endpoints for our app
+- Stub out data functions
