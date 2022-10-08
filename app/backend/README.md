@@ -38,3 +38,14 @@
 
 ## Database persistence - json
 - Store data in json
+
+
+## Metrics
+- How performant is our API?
+- Given 10 -> 10k... urls?
+- Some help from [Flask-MonitoringDashboard](https://flask-monitoringdashboard.readthedocs.io/en/latest/)
+- View at http://localhost:5000/dashboard, username/password = admin
+- See http://localhost:5000/dashboard/endpoint/1/profiler
+- With [Click](https://flask.palletsprojects.com/en/2.2.x/cli/) you can write command line interfaces
+- `cd flaskr && flask reset_urls --total 10`
+- `flask reset_urls --total 10000`

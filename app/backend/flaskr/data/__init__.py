@@ -1,6 +1,7 @@
 import json
 import os.path
 from typing import Dict
+import click
 
 FILE_NAME = 'urls.json'
 INITIAL_VALUES = {}
@@ -36,3 +37,12 @@ def get_urls() -> Dict[str, str]:
     with open(FILE_NAME) as url_storage:
         # turns it into python obj
         return json.load(url_storage)
+
+
+@click.command('reset_urls')
+@click.option('--total')
+def reset_total_urls_to(total: str):
+    urls = {n: f'google.com/search?q={n}' for n in range(int(total))}
+    with open(FILE_NAME, 'w') as url_storage:
+        json.dump(urls, url_storage)
+    click.echo(f'Set total urls to: {total}')
