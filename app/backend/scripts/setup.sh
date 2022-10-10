@@ -3,10 +3,12 @@
 
 cd ..
 
-# run venv as an module, 2nd venv passed as arugment (the name of the virtual env)
-python3 -m venv venv
+VENV=test_venv
 
-source venv/bin/activate
+# run venv as an module, 2nd venv passed as arugment (the name of the virtual env)
+python3 -m venv $VENV
+
+source $VENV/bin/activate
 
 which python3
 

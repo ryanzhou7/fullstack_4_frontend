@@ -35,6 +35,20 @@
 - Let's create the endpoints for our app
 - Stub out data functions
 
-
 ## Database persistence - json
+
 - Store data in json
+
+## Deployment
+
+- Run this code on another computer
+- Sure we could `git clone ... && sh setup.sh && dev.sh` but a distribution file is better
+- If someone just wants to run the code, they don't need files like README.md just the app code
+- Follows steps [here](https://flask.palletsprojects.com/en/2.2.x/tutorial/deploy/)
+  - The current standard for Python distribution is the wheel format, with the .whl extension
+- `docker pull amazonlinux:2 # Download amazonlinux image tagged with 2 to local`
+- `docker container run -d <IMAGE_ID> # deatached means container will keep running after this command`
+- `docker cp backend $CONTAINER_ID:/home`
+- `docker exec -it $CONTAINER_ID /bin/bash`
+- `yum install python3`
+- `ERROR: Could not find a version that satisfies the requirement numpy==1.23.3`

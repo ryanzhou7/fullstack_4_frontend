@@ -1,0 +1,14 @@
+# per https://flask.palletsprojects.com/en/2.2.x/tutorial/install/
+# This tells Python to copy everything in the static and templates directories, 
+# but to exclude all bytecode files.
+
+# for later
+# include flaskr/schema.sql
+
+# syntax at https://packaging.python.org/en/latest/guides/using-manifest-in/
+graft flaskr/static
+graft flaskr/templates
+global-exclude *.pyc
+
+# don't include our venvs
+recursive-exclude venv *

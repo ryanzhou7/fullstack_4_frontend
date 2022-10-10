@@ -29,4 +29,6 @@ htmlcov/
 
 # added
 __pycache__/
+test_venv/
+.test_venv/
 ## Flask
