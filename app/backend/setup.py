@@ -17,6 +17,4 @@ setup(
     dependency_links=[],
     install_requires=requirements,
     python_requires=">=3.6",
-    options={"bdist_wheel": {"universal": True}},
 )
-# https://realpython.com/python-wheels/

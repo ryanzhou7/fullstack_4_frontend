@@ -3,14 +3,15 @@
 
 cd ..
 
-VENV=test_venv
+VENV=venv
+rm -rf $VENV
 
 # run venv as an module, 2nd venv passed as arugment (the name of the virtual env)
 python3 -m venv $VENV
 
-source $VENV/bin/activate
+# upgrade python
+python3 -m pip install --upgrade pip
 
-which python3
+. $VENV/bin/activate
 
-# assumes requirements.txt in folder
-pip install
+pip install .

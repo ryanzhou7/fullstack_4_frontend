@@ -47,8 +47,13 @@
 - Follows steps [here](https://flask.palletsprojects.com/en/2.2.x/tutorial/deploy/)
   - The current standard for Python distribution is the wheel format, with the .whl extension
 - `docker pull amazonlinux:2 # Download amazonlinux image tagged with 2 to local`
-- `docker container run -d <IMAGE_ID> # deatached means container will keep running after this command`
+- `docker container run -dit <IMAGE_ID> # deatached means container will keep running after this command`
 - `docker cp backend $CONTAINER_ID:/home`
 - `docker exec -it $CONTAINER_ID /bin/bash`
 - `yum install python3`
 - `ERROR: Could not find a version that satisfies the requirement numpy==1.23.3`
+
+- For dev, setup.sh with requirements.txt worked with hot reload
+- For flaskr, pip install . at root directory, cd flaskr, flask run
+  - Needed bdist_wheel?
+  - pip list only flaskr???

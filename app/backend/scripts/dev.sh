@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # assumes setup is called
-source ../venv/bin/activate
+. ../venv/bin/activate
 
 cd ../flaskr
 
